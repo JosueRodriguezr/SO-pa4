@@ -32,8 +32,8 @@ void process_image(char *inputfile, char *outputfile, char *num_threads) {
     BMP_Image *shmaddr = getSharedMemoryImage(key);
     int height = shmaddr->norm_height;
     int halfheight = shmaddr->norm_height / 2;
-    char height_str[10]; // Almacenar altura como string
-    char halfheight_str[10]; // Almacenar mitad de la altura como string
+    char height_str[12]; // Almacenar altura como string
+    char halfheight_str[12]; // Almacenar mitad de la altura como string
     sprintf(height_str, "%d", height);
     sprintf(halfheight_str, "%d", halfheight);
 

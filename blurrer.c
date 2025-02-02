@@ -3,6 +3,7 @@
 #include <pthread.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+#include <string.h>
 #include "bmp.h"
 
 // Esta estructura nos sirve para almacenar los valores de cada hilo
